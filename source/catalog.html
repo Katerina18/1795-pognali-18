@@ -2,25 +2,83 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Погнали!">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="img/logo-mobile-white@1x.png" alt="Погнали!">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
       </nav>
-      <h1 class="page-header__title">Каталог</h1>
+      <h1 class="page-header__title">Попутчики</h1>
     </header>
 
     <main class="page-main">
+      <!-- <section class="filter-contries">
+        <h2 class="filter-contries__title">Фильтрация по странам</h2>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <input type="radio" name="continent" id="europe" checked>
+          <label for="europe">Европа</label>
+          <input type="radio" name="continent" id="asia">
+          <label for="asia">Азия</label>
+          <input type="radio" name="continent" id="usa">
+          <label for="usa">Америка</label>
+          <input type="radio" name="continent" id="islands">
+          <label for="islands">Острова</label>
+        </form>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <input type="radio" name="letter" id="letter1" checked>
+          <label for="letter1">A</label>
+          <input type="radio" name="letter" id="letter2">
+          <label for="letter2">Б</label>
+          <input type="radio" name="letter" id="letter3">
+          <label for="letter3">В</label>
+          <input type="radio" name="letter" id="letter4">
+          <label for="letter4">Г</label>
+          <input type="radio" name="letter" id="letter5" checked>
+          <label for="letter5">Д</label>
+          <input type="radio" name="letter" id="letter6">
+          <label for="letter6">Е</label>
+          <input type="radio" name="letter" id="letter7">
+          <label for="letter7">З</label>
+          <input type="radio" name="letter" id="letter8">
+          <label for="letter8">И</label>
+          <input type="radio" name="letter" id="letter9">
+          <label for="letter9">К</label>
+          <input type="radio" name="letter" id="letter10">
+          <label for="letter10">Л</label>
+        </form>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <input type="radio" name="country" id="country1">
+          <label for="country1">Афганистан</label>
+          <input type="radio" name="country" id="country2">
+          <label for="country2">Албания</label>
+          <input type="radio" name="country" id="country3">
+          <label for="country3">Алжир</label>
+          <input type="radio" name="country" id="country4">
+          <label for="country4">Андорра</label>
+          <input type="radio" name="country" id="country5">
+          <label for="country5">Аргентина</label>
+          <input type="radio" name="country" id="country6">
+          <label for="country6">Армения</label>
+          <input type="radio" name="country" id="country7">
+          <label for="country7">Автралия</label>
+          <input type="radio" name="country" id="country8">
+          <label for="country8">Австрия</label>
+          <input type="radio" name="country" id="country9">
+          <label for="country9">Азербайджан</label>
+          <button type="button" name="button">Свернуть</button>
+        </form>
+      </section> -->
       <section class="users">
         <ul class="users__list">
           <li class="users__card user">
             <div class="user__wrapper">
-              <img class="user__foto" src="https://via.placeholder.com/150x150" alt="Фото попутчика">
+              <img class="user__foto" src="img/firsova-mobile@1x.jpg" alt="Фото попутчика">
               <p class="user__name">Таня Фирсова</p>
               <span class="user__likes">1,5 M</span>
             </div>
@@ -36,22 +94,22 @@
             <div class="user__vehicle">
               <h4 class="user__vehicle-title">транспорт:</h4>
               <ul class="user__vehicle-list">
-                <li class="user__vehicle-icon user__vehicle-icon--active"><img src="https://via.placeholder.com/150x150" alt="Самолетом"></li>
-                <li class="user__vehicle-icon"><img src="https://via.placeholder.com/150x150" alt="Автобусом"></li>
-                <li class="user__vehicle-icon"><img src="https://via.placeholder.com/150x150" alt="Велосипедом"></li>
-                <li class="user__vehicle-icon"><img src="https://via.placeholder.com/150x150" alt="Пешком"></li>
+                <li class="user__vehicle-icon users-list__vehicle-icon--active"><img src="img/plane.svg" width="19px" height="21px" alt="Самолетом"></li>
+                <li class="user__vehicle-icon"><img src="img/bus.svg" width="17px" height="21px" alt="Автобусом"></li>
+                <li class="user__vehicle-icon"><img src="img/bike.svg" width="24px" height="21px" alt="Велосипедом"></li>
+                <li class="user__vehicle-icon"><img src="img/run.svg" width="20px" height="21px" alt="Пешком"></li>
               </ul>
             </div>
             <div class="user__level">
               <h4 class="user__level-title">левел:</h4>
               <span class="user__level-number">99</span>
             </div>
-            <a class="user__link button"  href="#">Позвать!</a>
+            <a class="user__contact button"  href="#">Позвать!</a>
           </li>
 
           <li class="users__card user">
             <div class="user__wrapper">
-              <img class="user__user-foto" src="https://via.placeholder.com/150x150" alt="Фото попутчика">
+              <img class="user__user-foto" src="img/demin-mobile@1x.jpg" alt="Фото попутчика">
               <p class="user__user-name">Петя<br>Демин</p>
               <span class="user__likes">150</span>
             </div>
@@ -65,23 +123,23 @@
             </div>
             <div class="user__vehicle">
               <h4 class="user__vehicle-title">транспорт:</h4>
-              <ul class="user__vehicle">
-                <li class="user__vehicle-icon users-list__vehicle-icon--active"><img src="https://via.placeholder.com/150x150" alt="Самолетом"></li>
-                <li class="user__vehicle-icon users-list__vehicle-icon--active"><img src="https://via.placeholder.com/150x150" alt="Автобусом"></li>
-                <li class="user__vehicle-icon"><img src="https://via.placeholder.com/150x150" alt="Велосипедом"></li>
-                <li class="user__vehicle-icon users-list__vehicle-icon--active"><img src="https://via.placeholder.com/150x150" alt="Пешком"></li>
+              <ul class="user__vehicle-list">
+                <li class="user__vehicle-icon user__vehicle-icon--active"><img src="img/plane.svg" width="19px" height="21px" alt="Самолетом"></li>
+                <li class="user__vehicle-icon user__vehicle-icon--active"><img src="img/bus.svg" width="17px" height="21px" alt="Автобусом"></li>
+                <li class="user__vehicle-icon"><img src="img/bike.svg" width="24px" height="21px" alt="Велосипедом"></li>
+                <li class="user__vehicle-icon user__vehicle-icon--active"><img src="img/run.svg" width="20px" height="21px" alt="Пешком"></li>
               </ul>
             </div>
             <div class="user__level">
               <h4 class="user__level-title">левел:</h4>
               <span class="user__level-number">80</span>
             </div>
-            <a class="user__link button"  href="#">Позвать!</a>
+            <a class="user__contact button"  href="#">Позвать!</a>
           </li>
 
           <li class="users__card user">
             <div class="user__wrapper">
-              <img class="user__user-foto" src="https://via.placeholder.com/150x150" alt="Фото попутчика">
+              <img class="user__user-foto" src="img/smolov-mobile@1x.jpg" alt="Фото попутчика">
               <p class="user__user-name">Марк Смолов</p>
               <span class="user__likes">1700</span>
             </div>
@@ -96,7 +154,7 @@
             </div>
             <div class="user__vehicle">
               <h4 class="user__vehicle-title">транспорт:</h4>
-              <ul class="user__vehicle">
+              <ul class="user__vehicle-list">
                 <li class="user__vehicle-icon users-list__vehicle-icon--active"><img src="https://via.placeholder.com/150x150" alt="Самолетом"></li>
                 <li class="user__vehicle-icon"><img src="https://via.placeholder.com/150x150" alt="Автобусом"></li>
                 <li class="user__vehicle-icon users-list__vehicle-icon--active"><img src="https://via.placeholder.com/150x150" alt="Велосипедом"></li>
@@ -107,12 +165,12 @@
               <h4 class="user__level-title">левел:</h4>
               <span class="user__level-number">25</span>
             </div>
-            <a class="user__link button" href="#">Позвать!</a>
+            <a class="user__contact button" href="#">Позвать!</a>
           </li>
 
           <li class="users__card user">
             <div class="user__wrapper">
-              <img class="user__user-foto" src="https://via.placeholder.com/150x150" alt="Фото попутчика">
+              <img class="user__user-foto" src="img/rogovaya-mobile@1x.jpg" alt="Фото попутчика">
               <p class="user__user-name">Лариса Роговая</p>
               <span class="user__likes">23</span>
             </div>
@@ -126,7 +184,7 @@
             </div>
             <div class="user__vehicle">
               <h4 class="user__vehicle-title">транспорт:</h4>
-              <ul class="user__vehicle">
+              <ul class="user__vehicle-list">
                 <li class="user__vehicle-icon users-list__vehicle-icon--active"><img src="https://via.placeholder.com/150x150" alt="Самолетом"></li>
                 <li class="user__vehicle-icon users-list__vehicle-icon--active"><img src="https://via.placeholder.com/150x150" alt="Автобусом"></li>
                 <li class="user__vehicle-icon"><img src="https://via.placeholder.com/150x150" alt="Велосипедом"></li>
@@ -137,7 +195,7 @@
               <h4 class="user__level-title">левел:</h4>
               <span class="user__level-number">50</span>
             </div>
-            <a class="user__link button"  href="#">Позвать!</a>
+            <a class="user__contact button"  href="#">Позвать!</a>
           </li>
         </ul>
         <button class="users_show-more" type="button">Показать еще</button>
@@ -150,24 +208,31 @@
 
     <footer class="page-footer">
       <a class="page-footer__logo">
-        <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" alt="Погнали!">
+        <img class="page-footer__logo-image" src="img/logo-mobile-blue@1x.png" alt="Погнали!">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-              <a class="social__link social__link--facebook" href="">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="">
+                <img src="img/facebook.svg" width="11" height="21" alt="Мы в Фейсбуке">
+              </a>
           </li>
           <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="">Мы в Вконтакте</a>
+              <a class="social__link social__link--vkontakte" href="">
+                <img src="img/vk.svg" width="23" height="12" alt="Мы в Вконтакте">
+              </a>
           </li>
           <li class="social__item">
-              <a class="social__link social__link--instagram" href="">Мы в Инстаграме</a>
+              <a class="social__link social__link--instagram" href="">
+                <img src="img/instagram.svg" width="18" height="18" alt="Мы в Инстаграме">
+              </a>
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
+      <div class="page-footer__copyright">
+        <b class="page-footer__copyright-text">Разработано:</b>
+        <a class="button page-footer__copyright-link" href="https://htmlacademy.ru">
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy"></a>
       </div>
     </footer>
   </body>

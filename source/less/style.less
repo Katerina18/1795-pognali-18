@@ -1,0 +1,78 @@
+@import "normalize.less";
+@import "blocks/main-nav.less";
+@import "blocks/user-list.less";
+@import "blocks/page-header.less";
+@import "blocks/instruction.less";
+@import "blocks/about-app.less";
+@import "blocks/add-profile.less";
+@import "blocks/route.less";
+@import "blocks/contacts.less";
+@import "blocks/copyright.less";
+@import "blocks/signup.less";
+@import "blocks/social.less";
+@import "blocks/service.less";
+@import "blocks/user.less";
+@import "blocks/users.less";
+@import "blocks/page-footer.less";
+@import "variables.less";
+
+html {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+       -moz-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+@font-face {
+  font-family: 'BloggerSans';
+  src: url('../fonts/bloggersans-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BloggerSans';
+  src: url('../fonts/bloggersans-light.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BloggerSans';
+  src: url('../fonts/bloggersans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BloggerSans';
+  src: url('../fonts/bloggersans-medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  font-family: 'BloggerSans', Arial, sans-serif;
+}
+
+.button {
+  display: block;
+  text-decoration: none;
+}
