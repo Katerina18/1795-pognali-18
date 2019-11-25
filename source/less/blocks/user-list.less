@@ -24,7 +24,18 @@
   font-weight: bold;
   color: @blue-back;
   background: @yellow;
+}
 
+@media (min-width: @tablet-width) {
+  .user-list {
+    align-items: center;
+    &__phone, &__email {
+      display: none;
+    }
+  }
 
-
+  .user-list__login {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

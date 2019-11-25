@@ -1,5 +1,5 @@
 .service {
-  padding: 49px;
+  padding: 25px;
   background: no-repeat bottom url("../img/about-mobile@1x.png");
 }
 
@@ -25,4 +25,70 @@
   font-size: 16px;
   line-height: 22px;
   color: white;
+}
+
+.service__more {
+  width: 270px;
+  padding: 22px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: #161c35;
+  background: #ffd74b;
+}
+.service__more.button {
+  display: none;
+}
+
+
+
+@media (min-width: @tablet-width) {
+  .service  {
+    padding: 0;
+    background: no-repeat top 50px   right url("../img/about-tablet@1x.png");
+  }
+
+  .service__wrapper {
+    width: 50%;
+    padding: 35px;
+  }
+
+  .service__title {
+    margin: 40px 0;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .service__text {
+    padding-bottom: 35px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .service__advice {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .service__more.button {
+    display: block;
+  }
+
+  .service__more {
+    margin: 50px 0 0;
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .service__wrapper {
+    width: 60%;
+    padding: 70px;
+  }
+  .service  {
+    padding: 0;
+    background: no-repeat top 50px   right url("../img/about-desktop@1x.png");
+  }
+
 }

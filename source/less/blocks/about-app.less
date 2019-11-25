@@ -1,5 +1,9 @@
 .about-app {
-  background: @blue-back no-repeat top url("../img/globe-back-mobile@1x.jpg");
+  padding: 30px 25px;
+  background: @darkblue no-repeat top url("../img/globe-back-mobile@1x.jpg");
+}
+.about-app__wrapper {
+  padding: 30px 0;
 }
 
 .about-app__review {
@@ -13,19 +17,19 @@
   line-height: 40px;
   text-align: center;
   color: white;
-  margin: 0;
+  margin: 0 0 30px;
 }
 
 .about-app__review {
-  margin-left: 50px;
+  padding: 0 25px;
 }
 
 .about-app__review-text {
+  margin: 0 0 22px;
   font-weight: 200;
   font-size: 16px;
   line-height: 22px;
   color: white;
-
 }
 
 .about-app__review-author {
@@ -37,6 +41,49 @@
 }
 
 .about-app__instruction {
-  padding: 0 25px;
+  padding: 0;
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .about-app {
+    padding: 40px;
+    background: @blue-back no-repeat top url("../img/globe-back-tablet@1x.jpg");
+  }
+  .about-app__title {
+    padding: 0 35px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .about-app__review-text {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .about-app__review-author {
+    font-size: 21px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-app {
+    padding: 60px;
+    background: @blue-back no-repeat top url("../img/globe-back-desktop@1x.jpg");
+  }
+  .about-app__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-app__title {
+    flex: 0 1 40%;
+    padding-left: 70px;
+    text-align: left;
+  }
+
+  .about-app__review {
+    flex: 0 1 25%;
+  }
 }

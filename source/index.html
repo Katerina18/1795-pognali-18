@@ -11,30 +11,39 @@
       <a class="page-header__logo">
         <img class="page-header__logo-image" src="img/logo-mobile-white@1x.png" alt="Погнали!">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <nav class="page-header__main-nav main-nav">
         <div class="main-nav__wrapper">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">О сервисе</li>
+            <li class="site-list__item">Направления</li>
+            <li class="site-list__item">Попутчики</li>
+          </ul>
           <ul class="main-nav__list user-list">
-              <li class="user-list__item">
-                <a class="user-list__phone" href="">Позвонить</a>
-              </li>
-              <li class="user-list__item">
-                <a class="user-list__email" href="">Написать</a>
-              </li>
-              <li class="user-list__item">
-                <a class="user-list__login" href="login.html">Авторизация</a>
-              </li>
-            </ul>
+            <li class="user-list__item">
+              <a class="user-list__phone" href="">
+                <img src="img/topmenu-phone.svg" width="18px" height="18px" alt="Позвонить"></a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__email" href="">
+                <img src="img/topmenu-mail.svg" width="18px" height="14px" alt="Написать"></a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__login" href="login.html">Авторизация</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
 
     <main class="page-main">
       <section class="about-app">
-        <h1 class="about-app__title">В путешествие с&nbsp;крутыми попутчиками!</h1>
-        <div class="about-app__review">
-          <p class="about-app__review-text">«Лучшее приложение,<br>что я видел в жизни!»</p>
-          <cite class="about-app__review-author">Мурат Эльтазин<br>главный редактор<br>газеты «гаджетлайф»</cite>
+        <div class="about-app__wrapper">
+          <h1 class="about-app__title">В путешествие с&nbsp;крутыми попутчиками!</h1>
+          <div class="about-app__review">
+            <p class="about-app__review-text">«Лучшее приложение,<br>что я видел в жизни!»</p>
+            <cite class="about-app__review-author">Мурат Эльтазин<br>главный редактор газеты «гаджетлайф»</cite>
+          </div>
         </div>
         <ul class="about-app__instruction instruction">
           <li class="instruction__step instruction__step--one">
@@ -51,9 +60,12 @@
           </li>
         </ul>
         <div class="about-app__service service">
-          <h2 class="service__title">О сервисе</h2>
-          <p class="service__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
-          <b class="service__advice">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</b>
+          <div class="service__wrapper">
+            <h2 class="service__title">О сервисе</h2>
+            <p class="service__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
+            <b class="service__advice">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</b>
+            <a class="service__more button" href="form.html">Подробнее</a>
+          </div>
         </div>
       </section>
 
@@ -100,58 +112,66 @@
       <section class="users">
         <div class="users__wrapper">
           <h2 class="users__title">Попутчики</h2>
-          <p class="users__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
-            <strong class="users__text--slogan">Теперь можно легко найти единомышленников!</strong>
-          </p>
+          <p class="users__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+          <p class="users__text-slogan">Теперь можно легко найти единомышленников!</p>
         </div>
         <ul class="users__list">
           <li class="users__card user">
             <a class="user__link" href="#">
-              <img class="user__foto" src="img/firsova-mobile@1x.jpg" alt="Фото попутчика">
-              <div class="user__level">
-                <span class="user__level-number">99</span> level
-              </div>
-              <div class="user__visit-contries">
-                <ul class="user__flags-list">
-                  <li class="user__flag"><img src="https://via.placeholder.com/150x150" alt="Шри-Ланка"></li>
-                  <li class="user__flag"><img src="https://via.placeholder.com/150x150" alt="Тайланд"></li>
-                  <li class="user__flag"><img src="https://via.placeholder.com/150x150" alt="Сейшелы"></li>
-                </ul>
-              </div>
-              <p class="user__name">Таня Фирсова</p>
-              <p class="user__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-              <div class="user__vehicle">
-                <ul class="user__vehicle-list">
-                  <li class="user__vehicle-icon users-list__vehicle-icon--active"><img src="img/plane.svg" width="19px" height="21px" alt="Самолетом"></li>
-                  <li class="user__vehicle-icon"><img src="img/bus.svg" width="17px" height="21px" alt="Автобусом"></li>
-                  <li class="user__vehicle-icon"><img src="img/bike.svg" width="24px" height="21px" alt="Велосипедом"></li>
-                  <li class="user__vehicle-icon"><img src="img/run.svg" width="20px" height="21px" alt="Пешком"></li>
-                </ul>
+              <picture>
+                <source srcset="img/firsova-desktop@1x.jpg" media="(min-width: 1440px)">
+                <source srcset="img/firsova-tablet@1x.jpg" media="(min-width: 768px)">
+                <img class="user__foto" src="img/firsova-mobile@1x.jpg" alt="Фото попутчика">
+              </picture>
+              <div class="user__wrapper">
+                <div class="user__level">
+                  <span class="user__level-number">99</span> level
+                </div>
+                <div class="user__visit-contries">
+                  <ul class="user__flags-list">
+                    <li class="user__flag">
+                      <img src="https://via.placeholder.com/150x150" width="35" height="24" alt="Шри-Ланка"></li>
+                    <li class="user__flag"><img src="https://via.placeholder.com/150x150" width="35" height="24" alt="Тайланд"></li>
+                    <li class="user__flag"><img src="https://via.placeholder.com/150x150" width="35" height="24" alt="Сейшелы"></li>
+                  </ul>
+                </div>
+                <p class="user__name">Таня Фирсова</p>
+                <p class="user__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+                <div class="user__vehicle">
+                  <ul class="user__vehicle-list">
+                    <li class="user__vehicle-icon users-list__vehicle-icon--active"><img src="img/plane.svg" width="19px" height="21px" alt="Самолетом"></li>
+                    <li class="user__vehicle-icon"><img src="img/bus.svg" width="17px" height="21px" alt="Автобусом"></li>
+                    <li class="user__vehicle-icon"><img src="img/bike.svg" width="24px" height="21px" alt="Велосипедом"></li>
+                    <li class="user__vehicle-icon"><img src="img/run.svg" width="20px" height="21px" alt="Пешком"></li>
+                  </ul>
+                </div>
               </div>
             </a>
           </li>
           <li class="users__card user">
             <a class="user__link" href="#">
-              <img class="user__foto" src="img/demin-mobile@1x.jpg" alt="Фото попутчика">
-              <div class="user__level">
-                <span class="user__level-number">88</span> level
-              </div>
-              <div class="user__visit-contries">
-                <ul class="user__flags-list">
-                  <li class="user__flag"><img src="https://via.placeholder.com/150x150" alt="Шри-Ланка"></li>
-                  <li class="user__flag"><img src="https://via.placeholder.com/150x150" alt="Тайланд"></li>
-                  <li class="user__flag"><img src="https://via.placeholder.com/150x150" alt="Сейшелы"></li>
-                </ul>
-              </div>
-              <p class="user__name">Петя Демин</p>
-              <p class="user__hashtags">#бургер #бар #футбол #концерт #крафт</p>
-              <div class="user__vehicle">
-                <ul class="user__vehicle-list">
-                  <li class="user__vehicle-icon user__vehicle-icon--active"><img src="img/plane.svg" width="19px" height="21px" alt="Самолетом"></li>
-                  <li class="user__vehicle-icon user__vehicle-icon--active"><img src="img/bus.svg" width="17px" height="21px" alt="Автобусом"></li>
-                  <li class="user__vehicle-icon"><img src="img/bike.svg" width="24px" height="21px" alt="Велосипедом"></li>
-                  <li class="user__vehicle-icon user__vehicle-icon--active"><img src="img/run.svg" width="20px" height="21px" alt="Пешком"></li>
-                </ul>
+              <div class="user__wrapper">
+                <img class="user__foto" src="img/demin-mobile@1x.jpg" alt="Фото попутчика">
+                <div class="user__level">
+                  <span class="user__level-number">88</span> level
+                </div>
+                <div class="user__visit-contries">
+                  <ul class="user__flags-list">
+                    <li class="user__flag"><img src="https://via.placeholder.com/150x150" width="35" height="24" alt="Шри-Ланка"></li>
+                    <li class="user__flag"><img src="https://via.placeholder.com/150x150" width="35" height="24" alt="Тайланд"></li>
+                    <li class="user__flag"><img src="https://via.placeholder.com/150x150" width="35" height="24" alt="Сейшелы"></li>
+                  </ul>
+                </div>
+                <p class="user__name">Петя Демин</p>
+                <p class="user__hashtags">#бургер #бар #футбол #концерт #крафт</p>
+                <div class="user__vehicle">
+                  <ul class="user__vehicle-list">
+                    <li class="user__vehicle-icon user__vehicle-icon--active"><img src="img/plane.svg" width="19px" height="21px" alt="Самолетом"></li>
+                    <li class="user__vehicle-icon user__vehicle-icon--active"><img src="img/bus.svg" width="17px" height="21px" alt="Автобусом"></li>
+                    <li class="user__vehicle-icon"><img src="img/bike.svg" width="24px" height="21px" alt="Велосипедом"></li>
+                    <li class="user__vehicle-icon user__vehicle-icon--active"><img src="img/run.svg" width="20px" height="21px" alt="Пешком"></li>
+                  </ul>
+                </div>
               </div>
             </a>
           </li>
@@ -163,33 +183,42 @@
         <div class="add-profile__wrapper">
           <h2 class="add-profile__title">Добавьте свой профиль</h2>
           <ul class="add-profile__tariffs-list">
-            <li class="add-profile__tariff">
-                <p class="add-profile__tariff-name">Базовое размещение<br> Бесплатно</p>
-                <span class="add-profile__tariff-number add-profile__tariff-number--one">1</span>
+            <li class="add-profile__tariff-item">
+              <div class="add-profile__tariff">
+                <p class="add-profile__tariff-name">Базовое размещение</p>
+                <span class="add-profile__tariff-price">Бесплатно</span>
+              </div>
+              <div class="add-profile__tariff-number add-profile__tariff-number--one">1</div>
             </li>
-            <li class="add-profile__tariff">
-                <p class="add-profile__tariff-name">Вывод на первых позициях<br> 99 руб./мес</p>
-                <span class="add-profile__tariff-number add-profile__tariff-number--two">2</span>
+            <li class="add-profile__tariff-item">
+              <div class="add-profile__tariff">
+                <p class="add-profile__tariff-name">Вывод на первых позициях</p>
+                <span class="add-profile__tariff-price">99 руб./мес</span>
+              </div>
+              <div class="add-profile__tariff-number add-profile__tariff-number--two">2</div>
             </li>
-            <li class="add-profile__tariff">
-                <p class="add-profile__tariff-name">Кастомный цвет карточки<br> 59 руб./мес</p>
-                <span class="add-profile__tariff-number add-profile__tariff-number--three">3</span>
+            <li class="add-profile__tariff-item">
+              <div class="add-profile__tariff">
+                <p class="add-profile__tariff-name">Кастомный цвет карточки</p>
+                <span class="add-profile__tariff-price">59 руб./мес</span>
+              </div>
+              <div class="add-profile__tariff-number add-profile__tariff-number--three">3</div>
             </li>
           </ul>
           <button class="add-profile__business-tariff" type="button">Показать тарифы для бизнеса</button>
         </div>
       </section>
 
-      <section class="signup">
+      <!--section class="signup">
           <b class="signup__legend">Заинтересовались?</b>
           <p class="signup__text">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="signup__link-signin" href="#">авторизуйтесь.</a> </p>
           <form action="https://echo.htmlacademy.ru" method="post">
             <input type="email" placeholder="E-mail">
             <input type="submit" value="Войти">
           </form>
-      </section>
+      </section-->
 
-      <section class="contacts">
+      <!--section class="contacts">
         <p class="contacts__text">Остались вопросы? <br>Мы с радостью на них ответим!</p>
         <div class="contacts__wrapper">
           <span class="contacts__phone">8 800 555-86-28</span>
@@ -199,7 +228,7 @@
           <p class="contacts__address-text">ул. Большая Конюшенная, 19/8</p>
           <a href="#" class="contacts__link-route button">Проложить маршрут</a>
         </div>
-      </section>
+      </section-->
     </main>
 
     <footer class="page-footer">

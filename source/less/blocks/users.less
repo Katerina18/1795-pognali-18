@@ -1,9 +1,10 @@
 .users {
   background: @blue-back;
+  padding: 30px 25px;
 }
 
 .users__wrapper {
-  padding: 49px;
+  padding: 25px;
 }
 
 .users__title {
@@ -20,16 +21,17 @@
   font-size: 16px;
   line-height: 22px;
   color: white;
-  &--slogan {
+  &-slogan {
     display: block;
     padding: 20px 0;
     font-weight: bold;
+    color: white;
   }
 }
 .users__list {
   margin: 0;
   list-style: none;
-  padding: 0 25px;
+  padding: 0;
 }
 
 .users__to-all {
@@ -41,4 +43,72 @@
   line-height: 18px;
   color: @blue-back;
   background: @yellow;
+}
+
+@media (min-width: @tablet-width) {
+  .users {
+    padding: 88px 75px;
+  }
+
+  .users__wrapper {
+    padding: 35px 0;
+  }
+
+  .users__list {
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .users__card {
+    width: 285px;
+  }
+
+  .users__title {
+    margin: 0 0 50px;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .users__text {
+    width: 70%;
+    font-size: 28px;
+    line-height: 33px;
+    &-slogan {
+      width: 50%;
+      font-size: 21px;
+      line-height: 25px;
+    }
+  }
+
+  .users__to-all {
+    width: 100%;
+    padding: 30px 34px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .users {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 180px 60px 160px 130px;
+    height: 840px;
+  }
+
+  .users__wrapper {
+    width: 50%;
+  }
+
+  .users__list {
+    margin: 0;
+    width: 50%;
+  }
+
+  .users__to-all{
+    width: 270px;
+    margin: 0;
+  }
 }
