@@ -11,8 +11,28 @@
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo-mobile-white@1x.png" alt="Погнали!">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <nav class="page-header__main-nav main-nav">
+        <div class="main-nav__wrapper">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">О сервисе</li>
+            <li class="site-list__item">Направления</li>
+            <li class="site-list__item">Попутчики</li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__phone" href="">
+                <img src="img/topmenu-phone.svg" width="18px" height="18px" alt="Позвонить"></a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__email" href="">
+                <img src="img/topmenu-mail.svg" width="18px" height="14px" alt="Написать"></a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__login" href="login.html">Авторизация</a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <h1 class="page-header__title">Направления</h1>
     </header>

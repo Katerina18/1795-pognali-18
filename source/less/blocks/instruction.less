@@ -1,5 +1,5 @@
 .instruction {
-
+  margin: 0;
 }
 
 .instruction__step {
@@ -20,7 +20,9 @@
 }
 
 .instruction__step {
-  padding: 20px 25px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
   &-name {
     margin: 0;
     font-weight: bold;
@@ -36,4 +38,39 @@
     line-height: 18px;
     color: white;
   }
+}
+
+@media (min-width: @tablet-width) {
+  .instruction {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .instruction__step {
+    flex: 0 1 50%;
+    flex-direction: column;
+    padding: 30px 70px 10px 30px;
+    &-name {
+      font-size: 24px;
+      line-height: 24px;
+    }
+    &-number {
+      font-size: 30px;
+      line-height: 50px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .instruction {
+    flex-wrap: nowrap;
+  }
+  .instruction__step {
+    flex-direction: row;
+    padding: 30px 35px;
+    &-number {
+      padding-left: 10px;
+    }
+  }
+
 }

@@ -1,15 +1,44 @@
 .page-header {
   padding: 25px;
-  background-color: #161c35;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: white;
 }
 .page-header__title {
   margin: 0;
+  flex-basis: 100%;
   font-weight: bold;
   font-size: 36px;
-  line-height: 40  px;
+  line-height: 40px;
   color: white;
 }
 
 .main-nav__toggle {
 
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    padding: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #161c35;
+  }
+  .page-header__title {
+    margin-top: 130px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    padding: 45px 60px;
+  }
+  .page-header__logo {
+    width: 200px;
+    padding-right: 40px;
+  }
 }
