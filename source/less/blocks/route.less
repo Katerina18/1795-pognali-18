@@ -1,14 +1,17 @@
 .route {
+  display: flex;
+  flex-direction: column;
   padding: 30px 25px;
   background: @grey-back;
 }
 
 .route__wrapper {
-  padding: 25px;
+  padding: 40px 25px;
 }
 
 .route__title {
-  margin: 20px 0;
+  margin: 0;
+  margin-bottom: 20px;
   font-weight: bold;
   font-size: 24px;
   line-height: 24px;
@@ -25,27 +28,35 @@
 
 .route__list {
   margin: 0;
-  padding: 0;
+  padding: 17px 0;
   list-style: none;
 }
 
 .route__card {
-  padding: 28px 25px 23px;
+  display: flex;
+  align-items: flex-end;
   margin-bottom: 10px;
+  min-height: 190px;
   background: white;
+
   &--thiland {
     background: white no-repeat url("../img/thailand-mobile@1x.jpg");
+  }
+
+  &--france {
+    background: white no-repeat url("../img/france-mobile@1x.jpg");
+  }
+
+  &--czech {
+    background: white no-repeat url("../img/czech-mobile@1x.jpg");
   }
 }
 
 .route__link {
   display: flex;
   justify-content: space-between;
-  text-decoration: none;
-}
-
-.route__country {
-
+  flex-grow: 1;
+  padding: 30px 25px 20px;
 }
 
 .route__name-country {
@@ -63,14 +74,10 @@
   color: rgba(@grey, 0.3);
 }
 
-.route__icon-users {
-
-}
-
 .route__number-users {
   font-weight: 500;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 20px;
   color: rgba(@grey, 0.3);
 }
 
@@ -100,10 +107,19 @@
   }
 
   .route__card {
-    padding: 30px 30px 20px;
+    padding: 0;
     min-height: 140px;
+
     &--thiland {
       background: white no-repeat right url("../img/thailand-desktop@1x.jpg");
+    }
+
+    &--france {
+      background: white no-repeat right url("../img/france-desktop@1x.jpg");
+    }
+
+    &--czech {
+      background: white no-repeat right url("../img/czech-desktop@1x.jpg");
     }
   }
 
@@ -119,17 +135,14 @@
 
   .route__name-country {
     margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 24px;
   }
 
   .route__text {
     width: 55%;
     font-size: 28px;
     line-height: 33px;
-  }
-
-  .route__name-country {
-    font-size: 24px;
-    line-height: 24px;
   }
 
   .route__slogan-country {
@@ -148,27 +161,26 @@
     font-size: 24px;
     line-height: 24px;
   }
-
 }
+
 
 @media (min-width: @desktop-width) {
   .route {
-    padding: 200px 130px 140px;
+    position: relative;
+    padding: 140px 130px 140px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 840px;
   }
 
   .route__wrapper {
     width: 40%;
     margin-bottom: 60px;
+    margin-left: auto;
   }
 
   .route__list {
+    position: absolute;
     margin-right: 170px;
     width: 559px;
-    order: -1;
   }
 
   .route__text {
@@ -177,6 +189,8 @@
 
   .route__to-all {
     margin: 0;
+    margin-left: auto;
+    margin-right: 200px;
     width: 270px;
   }
 }

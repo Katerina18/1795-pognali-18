@@ -1,6 +1,6 @@
 .add-profile {
   background: @grey-back;
-  padding: 30px 25px;
+  padding: 45px 25px;
 }
 
 .add-profile__wrapper {
@@ -8,7 +8,9 @@
 }
 
 .add-profile__title {
-  margin: 20px 0;
+  margin: 0;
+  margin-bottom: 45px;
+  width: 120px;
   font-weight: bold;
   font-size: 24px;
   line-height: 24px;
@@ -16,12 +18,9 @@
 }
 
 .add-profile__tariffs-list {
-  list-style: none;
+  margin: 0;
+  margin-bottom: 20px;
   padding: 0;
-}
-
-.add-profile__tariffs-list {
-
 }
 
 .add-profile__tariff-item {
@@ -30,7 +29,8 @@
   padding: 15px 0;
 }
 
-.add-profile__tariff-name, .add-profile__tariff-price {
+.add-profile__tariff-name,
+.add-profile__tariff-price {
   margin: 0;
   font-weight: 200;
   font-size: 16px;
@@ -45,12 +45,15 @@
   line-height: 34px;
   text-align: center;
   border-radius: 50%;
+
   &--one {
     background: @orange;
   }
+
   &--two {
     background: #ffbd30;
   }
+
   &--three {
     background: @yellow;
   }
@@ -71,9 +74,11 @@
   }
 
   .add-profile__title {
+    width: 100%;
     margin: 0 0 50px;
     font-size: 45px;
     line-height: 45px;
+    text-align: center;
   }
 
   .add-profile__tariff-item {
@@ -87,7 +92,8 @@
     align-items: center;
   }
 
-  .add-profile__tariff-name, .add-profile__tariff-price {
+  .add-profile__tariff-name,
+  .add-profile__tariff-price {
     font-size: 28px;
     line-height: 33px;
   }

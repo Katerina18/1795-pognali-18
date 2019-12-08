@@ -1,24 +1,24 @@
 .page-footer {
   display: flex;
   flex-direction: column;
-  padding: 30px 25px 14px;
+  padding: 35px 25px 14px;
   background: white;
 }
 
 .page-footer__logo {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .page-footer__social {
-
+  margin-bottom: 45px;
 }
 
 .page-footer__copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  &-link {
-  }
+
   &-text {
     font-weight: normal;
     font-size: 16px;
@@ -31,10 +31,25 @@
   .page-footer {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
+
   .page-footer__copyright-text {
     margin-right: 24px;
     font-size: 20px;
-    line-height: 24px
+    line-height: 24px;
+  }
+
+  .page-footer__social,
+  .page-footer__logo {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    padding: 50px 60px;
   }
 }
