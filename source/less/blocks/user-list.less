@@ -1,27 +1,21 @@
 .user-list {
   padding: 0;
   list-style: none;
-}
 
-.user-list__item {
-
-}
-
-.user-list__phone {
-
-}
-
-.user-list__email {
-
+  &__phone,
+  &__email {
+    display: none;
+  }
 }
 
 .user-list__login {
-  display: inline-flex;
+  display: block;
   padding: 10px 35px;
-  text-decoration: none;
   text-transform: uppercase;
   border-radius: 50px;
   font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
   color: @blue-back;
   background: @yellow;
 }
@@ -29,13 +23,19 @@
 @media (min-width: @tablet-width) {
   .user-list {
     align-items: center;
-    &__phone, &__email {
-      display: none;
-    }
   }
 
   .user-list__login {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-list {
+    &__phone,
+    &__email {
+      display: block;
+    }
   }
 }

@@ -1,31 +1,29 @@
 .about-app {
-  padding: 30px 25px;
-  background: @darkblue no-repeat top url("../img/globe-back-mobile@1x.jpg");
+  padding: 25px;
+  padding-bottom: 55px;
+  background-color: @darkblue;
+  background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 39% top 15%, center top -10%;
 }
+
 .about-app__wrapper {
-  padding: 30px 0;
-}
-
-.about-app__review {
-
-}
-
-.about-app__title {
-  font-family: BloggerSans;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 40px;
-  text-align: center;
-  color: white;
-  margin: 0 0 30px;
+  padding: 0 0 30px;
 }
 
 .about-app__review {
   padding: 0 25px;
 }
 
+.about-app__title {
+  font: @title;
+  text-align: center;
+  color: white;
+  margin: 0 0 310px;
+}
+
 .about-app__review-text {
-  margin: 0 0 22px;
+  margin: 0 0 20px;
   font-weight: 200;
   font-size: 16px;
   line-height: 22px;
@@ -41,6 +39,7 @@
 }
 
 .about-app__instruction {
+  margin-bottom: 45px;
   padding: 0;
   list-style: none;
 }
@@ -48,15 +47,25 @@
 @media (min-width: @tablet-width) {
   .about-app {
     padding: 40px;
-    background: @blue-back no-repeat top url("../img/globe-back-tablet@1x.jpg");
+    background: url("../img/traveller-illustration-tablet@1x.png"), url("../img/globe-back-tablet@1x.jpg");
+    background-color: #192144;
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 39% top 25%, center top 24.58%;
   }
+
   .about-app__title {
+    margin-bottom: 90px;
     padding: 0 35px;
     font-size: 60px;
     line-height: 70px;
   }
 
+  .about-app__review {
+    margin-bottom: 210px;
+  }
+
   .about-app__review-text {
+    margin-bottom: 50px;
     font-size: 28px;
     line-height: 33px;
   }
@@ -70,20 +79,32 @@
 @media (min-width: @desktop-width) {
   .about-app {
     padding: 60px;
-    background: @blue-back no-repeat top url("../img/globe-back-desktop@1x.jpg");
+    padding-top: 100px;
+    background: url("../img/traveller-illustration-desktop@1x.png"), url("../img/globe-back-desktop@1x.jpg");
+    background-color: #192144;
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 42% top, center top -25%;
   }
+
   .about-app__wrapper {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 70px;
   }
 
   .about-app__title {
     flex: 0 1 40%;
+    margin: 0;
     padding-left: 70px;
     text-align: left;
   }
 
   .about-app__review {
     flex: 0 1 25%;
+    margin: 0;
+  }
+
+  .about-app__instruction {
+    margin-bottom: 100px;
   }
 }
