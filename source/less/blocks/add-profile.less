@@ -1,32 +1,44 @@
 .add-profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  z-index: -1;
+  margin-top: -60px;
   background: @grey-back;
-  padding: 45px 25px;
-}
-
-.add-profile__wrapper {
-  padding: 0 0 0 25px;
+  padding: 100px 25px 35px 50px;
+  .decor-section ();
 }
 
 .add-profile__title {
+  flex-basis: 50%;
+  align-self: center;
   margin: 0;
-  margin-bottom: 45px;
-  width: 120px;
   font-weight: bold;
   font-size: 24px;
   line-height: 24px;
   color: @orange;
 }
 
+.add-profile__tariff {
+  border-top: 1px solid #e1e3e9;
+  flex-basis: 80%;
+  padding: 10px 0;
+
+  &--decor {
+    border-bottom: 1px solid #e1e3e9;
+  }
+}
+
 .add-profile__tariffs-list {
-  margin: 0;
-  margin-bottom: 20px;
+  flex-basis: 100%;
+  margin: 25px 0 30px;
   padding: 0;
 }
 
 .add-profile__tariff-item {
   display: flex;
   justify-content: space-between;
-  padding: 15px 0;
 }
 
 .add-profile__tariff-name,
@@ -61,6 +73,11 @@
 
 .add-profile__business-tariff {
   margin: 0;
+  flex-basis: 100%;
+}
+
+.add-profile__business-tariff-text {
+  margin: 0;
   padding: 0;
   font-weight: bold;
   font-size: 16px;
@@ -68,13 +85,17 @@
   color: #132576;
 }
 
+.add-profile__icon-business {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .add-profile {
-    padding: 70px 40px;
+    padding: 130px 40px 65px;
   }
 
   .add-profile__title {
-    width: 100%;
+    flex-basis: 100%;
     margin: 0 0 50px;
     font-size: 45px;
     line-height: 45px;
@@ -82,6 +103,7 @@
   }
 
   .add-profile__tariff-item {
+    justify-content: normal;
     padding: 0;
   }
 
@@ -101,21 +123,36 @@
   .add-profile__tariff-number {
     order: -1;
     flex-basis: 67px;
+    margin-right: 20px;
     height: 67px;
     width: 67px;
     font-size: 28px;
     line-height: 67px;
   }
 
-  .add-profile__business-tariff {
+  .add-profile__icon-business {
+    display: flex;
+  }
+
+  .add-profile__business-tariff-text {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .add-profile__business-tariff {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  .add-profile__link {
+    order: 1;
   }
 }
 
 @media (min-width: @desktop-width) {
   .add-profile {
-    padding: 180px 130px 160px;
+    padding: 180px 130px 165px;
   }
 
   .add-profile__tariff-item {

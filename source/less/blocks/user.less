@@ -2,7 +2,8 @@
   margin-bottom: 10px;
   background: white;
   position: relative;
-  min-height: 230px;
+  min-height: 427px;
+  border-radius: 10px;
 }
 
 .user__link {
@@ -12,6 +13,10 @@
 
 .user__wrapper {
   padding: 0 20px 20px;
+}
+
+.user-card__foto {
+  vertical-align: top;
 }
 
 .user__contact {
@@ -29,6 +34,7 @@
 .user__foto {
   width: 100%;
   vertical-align: top;
+  border-radius: 10px 10px 0 0;
 }
 
 .user__level {
@@ -54,7 +60,7 @@
 }
 
 .user__visit-contries {
-  margin-top: -25px;
+  margin-top: -15px;
   margin-bottom: 10px;
 }
 
@@ -90,6 +96,28 @@
   padding: 0 55px;
   display: flex;
   justify-content: space-between;
+}
+
+@media (min-width: @tablet-width) {
+  .user {
+    min-height: 480px;
+  }
+
+  .user__name {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  .user__hashtags {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  .user__visit-contries {
+    margin-bottom: 18px;
+  }
 }
 
 @media (min-width: @desktop-width) {

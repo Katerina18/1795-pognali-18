@@ -1,41 +1,80 @@
 .user-list {
+  position: absolute;
+  top: 440px;
+  z-index: 6;
+  display: flex;
   padding: 0;
   list-style: none;
 
   &__phone,
   &__email {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+  }
+
+  .user-list__phone {
+    background: @orange;
+  }
+
+  .user-list__email {
+    background: #ffbd30;
   }
 }
 
 .user-list__login {
   display: block;
-  padding: 10px 35px;
+  padding: 10px 39px;
   text-transform: uppercase;
   border-radius: 50px;
   font-weight: bold;
   font-size: 17px;
-  line-height: 30px;
+  line-height: 20px;
   color: @blue-back;
   background: @yellow;
 }
 
 @media (min-width: @tablet-width) {
   .user-list {
+    margin: 0;
     align-items: center;
+    top: 40px;
+    right: 40px;
+
+    &__email,
+    &__phone {
+      display: none;
+    }
   }
 
   .user-list__login {
     font-size: 20px;
     line-height: 30px;
+    padding: 10px 29px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .user-list {
+    margin-left: auto;
+    position: static;
+    min-width: 20%;
+
     &__phone,
     &__email {
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+    }
+
+    &__login {
+      padding: 10px 30px;
     }
   }
 }
