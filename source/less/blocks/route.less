@@ -1,13 +1,18 @@
 .route {
   position: relative;
-  z-index: 3;
-  display: flex;
-  flex-direction: column;
+  z-index: 9;
   margin-top: -60px;
   padding: 30px 25px;
   padding-top: 100px;
   background: @grey-back;
   .decor-section ();
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    margin: auto;
+  }
 }
 
 .route__content {
@@ -48,7 +53,7 @@
 
   &--thiland {
     background: white no-repeat url("../img/thailand-mobile@1x.jpg");
-    background-size: 270px auto;
+    background-size: 100% auto;
 
     @media (min-resolution: @retina-dppx) {
       background-image: url("../img/thailand-mobile@2x.jpg");
@@ -57,7 +62,7 @@
 
   &--france {
     background: white no-repeat url("../img/france-mobile@1x.jpg");
-    background-size: 270px auto;
+    background-size: 100% auto;
 
     @media (min-resolution: @retina-dppx) {
       background-image: url("../img/france-mobile@2x.jpg");
@@ -66,12 +71,22 @@
 
   &--czech {
     background: white no-repeat url("../img/czech-mobile@1x.jpg");
-    background-size: 270px auto;
+    background-size: 100% auto;
 
     @media (min-resolution: @retina-dppx) {
       background-image: url("../img/czech-mobile@2x.jpg");
     }
   }
+}
+
+.route__card:last-child::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(rgba(237, 239, 246, 0), #edeff6 70%);
+  top: 70%;
+  left: 0;
+  width: 270px;
+  height: 80px;
 }
 
 .route__link {
@@ -110,7 +125,7 @@
   left: 25px;
   width: 35px;
   height: 24px;
-  background: top / 35px 24px no-repeat url("../img/flag-seychelles.svg");
+  background: top / 35px 24px no-repeat url("../img/flag-czech.svg");
 }
 
 .route__name-country {
@@ -164,21 +179,25 @@
 
 @media (min-width: @tablet-width) {
   .route {
-    padding: 75px;
-    padding-top: 100px;
-    background: url("../img/flags-back@1x.png"), url("../img/flags-back@2x.png");
-    background-color: @grey-back;
-    background-size: 290px auto;
-    background-repeat: no-repeat;
-    background-position: right 8% top 25%;
+    padding: 100px 40px 75px;
 
-    &::before {
+    &__wrapper {
+      position: relative;
+      width: 688px;
+      padding: 0 35px;
+      background: url("../img/flags-back@1x.png"), url("../img/flags-back@2x.png");
+      background-size: 290px auto;
+      background-repeat: no-repeat;
+      background-position: right 0 top 40px;
+    }
+
+    &__wrapper::before {
       content: "";
       position: absolute;
       background: #e2e5f2;
       z-index: -1;
-      top: 40.5%;
-      left: 5%;
+      top: 370px;
+      left: 0;
       width: 141px;
       height: 141px;
       border-radius: 20px;
@@ -236,6 +255,11 @@
     left: 64%;
   }
 
+  .route__card:last-child::after {
+    top: 60%;
+    width: 620px;
+  }
+
   .route__link {
     flex-direction: column;
     background: none;
@@ -291,30 +315,78 @@
 
 @media (min-width: @desktop-width) {
   .route {
-    padding: 140px 130px 140px;
+    padding: 150px 60px 85px;
     display: flex;
+    background-position: right 5% top 61%;
+
+    &__wrapper {
+      width: 1320px;
+      justify-content: space-between;
+      flex-direction: row;
+      background-position: right 0 top 0;
+      padding: 70px 70px 59px;
+    }
+
+    &__wrapper::before {
+      top: 0;
+    }
+
+    &__title {
+      margin-top: 5px;
+    }
+
+    &__card {
+      align-items: flex-start;
+    }
+
+    &__card:last-child {
+      margin: 0;
+    }
+
+    &__link {
+      padding-top: 24px;
+    }
+
+    &__country {
+      margin-bottom: 10px;
+    }
+  }
+
+  .route__card--thiland::before,
+  .route__card--france::before,
+  .route__card--czech::before {
+    top: 16%;
+    left: 61%;
+  }
+
+  .route__card:last-child::after {
+    top: 50%;
+    width: 559px;
+    height: 84px;
   }
 
   .route__content {
-    width: 40%;
+    flex-basis: 38%;
+    order: 1;
     margin-bottom: 60px;
-    margin-left: auto;
+    padding: 0;
+    padding-bottom: 60px;
   }
 
   .route__list {
-    position: absolute;
-    margin-right: 170px;
-    width: 559px;
+    flex-basis: 47.4%;
+    padding: 0;
   }
 
   .route__text {
-    width: 75%;
+    width: 77%;
   }
 
   .route__to-all {
+    position: absolute;
     margin: 0;
-    margin-left: auto;
-    margin-right: 200px;
+    bottom: 50px;
+    right: 245px;
     width: 270px;
   }
 }

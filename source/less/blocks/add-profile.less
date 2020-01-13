@@ -1,13 +1,19 @@
 .add-profile {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   position: relative;
-  z-index: -1;
+  z-index: 7;
   margin-top: -60px;
   background: @grey-back;
-  padding: 100px 25px 35px 50px;
+  padding: 95px 25px 35px;
   .decor-section ();
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 25px;
+    width: 270px;
+    margin: auto;
+  }
 }
 
 .add-profile__title {
@@ -21,18 +27,18 @@
 }
 
 .add-profile__tariff {
-  border-top: 1px solid #e1e3e9;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
   flex-basis: 80%;
   padding: 10px 0;
 
   &--decor {
-    border-bottom: 1px solid #e1e3e9;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
 }
 
 .add-profile__tariffs-list {
   flex-basis: 100%;
-  margin: 25px 0 30px;
+  margin: 30px 0;
   padding: 0;
 }
 
@@ -51,6 +57,7 @@
 }
 
 .add-profile__tariff-number {
+  margin-top: 3px;
   color: white;
   height: 34px;
   width: 34px;
@@ -85,13 +92,23 @@
   color: #132576;
 }
 
-.add-profile__icon-business {
+.add-profile__icon {
   display: none;
+  height: 67px;
+  width: 67px;
+  background: #e2e5f2;
+  border-radius: 50%;
 }
 
 @media (min-width: @tablet-width) {
   .add-profile {
-    padding: 130px 40px 65px;
+    padding: 130px 40px 45px;
+
+    &__wrapper {
+      padding-left: 0;
+      width: 688px;
+      margin: auto;
+    }
   }
 
   .add-profile__title {
@@ -108,10 +125,27 @@
   }
 
   .add-profile__tariff {
-    flex-basis: 85%;
+    flex-basis: 82%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .add-profile__tariffs-list {
+    position: relative;
+    margin: 25px 0 1;
+  }
+
+  .add-profile__tariffs-list::before {
+    content: "";
+    position: absolute;
+    background: #e2e5f2;
+    z-index: -1;
+    top: -42px;
+    right: 0;
+    width: 198px;
+    height: 285px;
+    border-radius: 20px;
   }
 
   .add-profile__tariff-name,
@@ -123,6 +157,7 @@
   .add-profile__tariff-number {
     order: -1;
     flex-basis: 67px;
+    margin: 0;
     margin-right: 20px;
     height: 67px;
     width: 67px;
@@ -130,8 +165,14 @@
     line-height: 67px;
   }
 
-  .add-profile__icon-business {
+  .add-profile__icon {
     display: flex;
+    justify-content: center;
+    margin-right: 20px;
+  }
+
+  .add-profile__icon-business {
+    margin-top: 22px;
   }
 
   .add-profile__business-tariff-text {
@@ -140,19 +181,52 @@
   }
 
   .add-profile__business-tariff {
-    flex-basis: 50%;
+    flex-basis: 60%;
     display: flex;
     align-items: center;
   }
 
   .add-profile__link {
     order: 1;
+    margin-right: 47px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .add-profile {
-    padding: 180px 130px 165px;
+    padding: 165px 130px 165px;
+
+    &__wrapper {
+      width: 1180px;
+      margin: auto;
+    }
+  }
+
+  .add-profile__tariffs-list::before {
+    width: 444px;
+    height: 300px;
+    top: -52px;
+    right: -120px;
+  }
+
+  .add-profile__business-tariff {
+    order: 1;
+  }
+
+  .add-profile__tariffs-list {
+    flex-basis: 80%;
+    margin: 0 0 30px;
+  }
+
+  .add-profile__link {
+    flex-basis: 20%;
+    margin: 0;
+    padding-left: 35px;
+  }
+
+  .add-profile__image {
+    width: 198px;
+    height: 198px;
   }
 
   .add-profile__tariff-item {
@@ -160,11 +234,12 @@
   }
 
   .add-profile__title {
+    margin-bottom: 135px;
     text-align: center;
   }
 
   .add-profile__tariff {
-    flex-basis: 800px;
+    flex-basis: 810px;
   }
 
   .add-profile__tariff-number {

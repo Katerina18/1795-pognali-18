@@ -22,20 +22,22 @@
         <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
               <svg class="main-nav__icon-menu" width="25px" height="19px" alt="Открыть">
-                <use xlink:href="#menu"></use>
+                <use xlink:href="#menu-close"></use>
               </svg>
             </button>
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
-                <a class="user-list__link" href="">О сервисе</a>
-              </li>
-              <li class="site-list__item">
-                <a class="user-list__link" href="">Направления</a>
-              </li>
-              <li class="site-list__item">
-                <a class="user-list__link" href="">Попутчики</a>
-              </li>
-            </ul>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item site-list__item--active">
+                  <a class="user-list__link" href="">О сервисе</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="user-list__link" href="">Направления</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="user-list__link" href="">Попутчики</a>
+                </li>
+              </ul>
+            </div>
         </nav>
         <ul class="page-header__user-list user-list">
           <li class="user-list__item">
@@ -81,45 +83,50 @@
     <main class="page-main">
       <section class="about-app">
         <div class="about-app__wrapper">
-          <h1 class="about-app__title">В путешествие с&nbsp;крутыми попутчиками!</h1>
-          <div class="about-app__review">
-            <p class="about-app__review-text">«Лучшее приложение,<br>что я видел в жизни!»</p>
-            <cite class="about-app__review-author">Мурат Эльтазин<br> главный редактор газеты<br> «гаджетлайф»</cite>
+          <div class="about-app__content">
+            <h1 class="about-app__title">В путешествие с&nbsp;крутыми попутчиками!</h1>
+            <div class="about-app__review">
+              <p class="about-app__review-text">«Лучшее приложение,<br>что я видел в жизни!»</p>
+              <cite class="about-app__review-author">Мурат Эльтазин<br> главный редактор газеты<br> «гаджетлайф»</cite>
+            </div>
           </div>
+          <ul class="about-app__instruction instruction">
+            <li class="instruction__step instruction__step--one">
+              <p class="instruction__step-name">Выберите<br> направление</p> <span class="instruction__step-number">1</span>
+            </li>
+            <li class="instruction__step  instruction__step--two">
+              <p class="instruction__step-name">Изучите идеи путешественников</p> <span class="instruction__step-number">2</span>
+            </li>
+            <li class="instruction__step  instruction__step--three">
+              <p class="instruction__step-name">Находите тех,<br> кто похож на вас</p> <span class="instruction__step-number">3</span>
+            </li>
+            <li class="instruction__step  instruction__step--four">
+              <p class="instruction__step-name">Путешествуйте<br> вместе! </p> <span class="instruction__step-number">4</span>
+            </li>
+          </ul>
         </div>
-        <ul class="about-app__instruction instruction">
-          <li class="instruction__step instruction__step--one">
-            <p class="instruction__step-name">Выберите<br> направление</p> <span class="instruction__step-number">1</span>
-          </li>
-          <li class="instruction__step  instruction__step--two">
-            <p class="instruction__step-name">Изучите идеи путешественников</p> <span class="instruction__step-number">2</span>
-          </li>
-          <li class="instruction__step  instruction__step--three">
-            <p class="instruction__step-name">Находите тех,<br> кто похож на вас</p> <span class="instruction__step-number">3</span>
-          </li>
-          <li class="instruction__step  instruction__step--four">
-            <p class="instruction__step-name">Путешествуйте<br> вместе! </p> <span class="instruction__step-number">4</span>
-          </li>
-        </ul>
       </section>
 
       <section class="service">
-        <div class="service__content">
-          <h2 class="service__title">О сервисе</h2>
-          <p class="service__text">Любое путешествие веселее с&nbsp;попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
-          <p class="service__advice">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
-          <a class="service__more button" href="form.html">Подробнее
-            <svg width="10px" height="14px" alt="HTML Academy">
-              <use xlink:href="#triangle-arrow-right"></use>
-            </svg>
-          </a>
+        <div class="service__wrapper">
+          <div class="service__content">
+            <h2 class="service__title">О сервисе</h2>
+            <p class="service__text">Любое путешествие веселее с&nbsp;попутчиками, которые на одной волне с&nbsp;тобой! Делитесь своими идеями путешествий и черпайте вдохновение в&nbsp;чужих. </p>
+            <p class="service__advice">А если найдете кого-то близкого по духу — скорее зовите в&nbsp;совместный трип!</p>
+            <a class="service__more button" href="form.html">Подробнее
+              <svg width="10px" height="14px" alt="HTML Academy">
+                <use xlink:href="#triangle-arrow-right"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </section>
 
       <section class="route">
+        <div class="route__wrapper">
           <div class="route__content">
             <h2 class="route__title">Направления</h2>
-            <p class="route__text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+            <p class="route__text">Мы не продаем туры и&nbsp;ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
           </div>
           <ul class="route__list">
             <li class="route__card route__card--thiland">
@@ -158,6 +165,7 @@
               <use xlink:href="#triangle-arrow-right"></use>
             </svg>
           </a>
+        </div>
       </section>
 
       <section class="users">
@@ -180,44 +188,36 @@
                 <div class="user__wrapper">
                   <div class="user__visit-contries">
                     <ul class="user__flags-list">
-                      <li class="user__flag">
-                        <svg width="35px" height="24px" alt="Шри-Ланка">
-                          <use xlink:href="#flag-sri-lanka"></use>
-                        </svg>
+                      <li class="user__flag user__flag--sri-lanka">
                       </li>
-                      <li class="user__flag">
-                        <svg width="35px" height="24px" alt="Тайланд">
-                          <use xlink:href="#flag-thailand"></use>
-                        </svg>
+                      <li class="user__flag user__flag--thailand">
                       </li>
-                      <li class="user__flag">
-                        <svg width="35px" height="24px" alt="Сейшелы">
-                          <use xlink:href="#flag-seychelles"></use>
-                        </svg>
+                      <li class="user__flag user__flag--seychelles">
                       </li>
                     </ul>
                   </div>
-                  <p class="user__name">Таня Фирсова</p>
+
+                  <p class="user__name"><span class="user__status"></span>Таня Фирсова</p>
                   <p class="user__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
                   <div class="user__vehicle">
                     <ul class="user__vehicle-list">
                       <li class="user__vehicle-icon user__vehicle-icon--active">
-                        <svg width="19px" height="21px" alt="Самолетом">
+                        <svg width="19px" height="21px">
                           <use xlink:href="#plane"></use>
                         </svg>
                       </li>
                       <li class="user__vehicle-icon">
-                        <svg width="17px" height="21px" alt="Автобусом">
+                        <svg width="17px" height="21px">
                           <use xlink:href="#bus"></use>
                         </svg>
                       </li>
                       <li class="user__vehicle-icon">
-                        <svg width="24px" height="21px" alt="Велосипедом">
+                        <svg width="24px" height="21px">
                           <use xlink:href="#bike"></use>
                         </svg>
                       </li>
                       <li class="user__vehicle-icon">
-                        <svg width="20px" height="21px" alt="Пешком">
+                        <svg width="20px" height="21px">
                           <use xlink:href="#run"></use>
                         </svg>
                       </li>
@@ -238,44 +238,33 @@
                   </div>
                   <div class="user__visit-contries">
                     <ul class="user__flags-list">
-                      <li class="user__flag">
-                        <svg width="35px" height="24px" viewBox="0 0 35 24">
-                          <use xlink:href="#flag-sri-lanka"></use>
-                        </svg>
+                      <li class="user__flag user__flag--belgium">
                       </li>
-                      <li class="user__flag">
-                        <svg width="35px" height="24px">
-                          <use xlink:href="#flag-thailand"></use>
-                        </svg>
-                      </li>
-                      <li class="user__flag">
-                        <svg width="35px" height="24px">
-                          <use xlink:href="#flag-seychelles"></use>
-                        </svg>
+                      <li class="user__flag user__flag--czech">
                       </li>
                     </ul>
                   </div>
-                  <p class="user__name">Петя Демин</p>
+                  <p class="user__name"><span class="user__status user__status--active"></span>Петя Демин</p>
                   <p class="user__hashtags">#бургер #бар #футбол #концерт #крафт</p>
                   <div class="user__vehicle">
                     <ul class="user__vehicle-list">
                       <li class="user__vehicle-icon user__vehicle-icon--active">
-                        <svg width="19px" height="21px" alt="Самолетом">
+                        <svg width="19px" height="21px">
                           <use xlink:href="#plane"></use>
                         </svg>
                       </li>
                       <li class="user__vehicle-icon user__vehicle-icon--active">
-                        <svg width="17px" height="21px" alt="Автобусом">
+                        <svg width="17px" height="21px">
                           <use xlink:href="#bus"></use>
                         </svg>
                       </li>
                       <li class="user__vehicle-icon">
-                        <svg width="24px" height="21px" alt="Велосипедом">
+                        <svg width="24px" height="21px">
                           <use xlink:href="#bike"></use>
                         </svg>
                       </li>
                       <li class="user__vehicle-icon user__vehicle-icon--active">
-                        <svg width="20px" height="21px" alt="Пешком">
+                        <svg width="20px" height="21px">
                           <use xlink:href="#run"></use>
                         </svg>
                       </li>
@@ -294,106 +283,148 @@
       </section>
 
       <section class="add-profile">
-        <h2 class="add-profile__title">Добавьте свой профиль</h2>
-        <a href="" class="add-profile__link">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/rates@1x.png 1x, img/rates@2x.png 2x">
-            <img class="add-profile__image" src="img/rates@1x.png" srcset="img/rates@2x.png" width="99" height="99" alt="Добавьте свой профиль">
-          </picture>
-        </a>
-        <ul class="add-profile__tariffs-list">
-          <li class="add-profile__tariff-item">
-            <div class="add-profile__tariff">
-              <p class="add-profile__tariff-name">Базовое размещение</p>
-              <span class="add-profile__tariff-price">Бесплатно</span>
-            </div>
-            <div class="add-profile__tariff-number add-profile__tariff-number--one">1</div>
-          </li>
-          <li class="add-profile__tariff-item">
-            <div class="add-profile__tariff">
-              <p class="add-profile__tariff-name">Вывод на первых позициях</p>
-              <span class="add-profile__tariff-price">99 руб./мес</span>
-            </div>
-            <div class="add-profile__tariff-number add-profile__tariff-number--two">2</div>
-          </li>
-          <li class="add-profile__tariff-item">
-            <div class="add-profile__tariff  add-profile__tariff--decor">
-              <p class="add-profile__tariff-name">Кастомный цвет карточки</p>
-              <span class="add-profile__tariff-price">59 руб./мес</span>
-            </div>
-            <div class="add-profile__tariff-number add-profile__tariff-number--three">3</div>
-          </li>
-        </ul>
-        <p class="add-profile__business-tariff">
-          <svg class="add-profile__icon-business" width="17px" height="21px">
-            <use xlink:href="#business"></use>
-          </svg>
-          <button class="add-profile__business-tariff-text" type="button">Показать тарифы для бизнеса</button>
-        </p>
-
+        <div class="add-profile__wrapper">
+          <h2 class="add-profile__title">Добавьте свой профиль</h2>
+          <a href="" class="add-profile__link">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/rates@1x.png 1x, img/rates@2x.png 2x">
+              <img class="add-profile__image" src="img/rates@1x.png" srcset="img/rates@2x.png" width="99" height="99" alt="Добавьте свой профиль">
+            </picture>
+          </a>
+          <ul class="add-profile__tariffs-list">
+            <li class="add-profile__tariff-item">
+              <div class="add-profile__tariff">
+                <p class="add-profile__tariff-name">Базовое размещение</p>
+                <span class="add-profile__tariff-price">Бесплатно</span>
+              </div>
+              <div class="add-profile__tariff-number add-profile__tariff-number--one">1</div>
+            </li>
+            <li class="add-profile__tariff-item">
+              <div class="add-profile__tariff">
+                <p class="add-profile__tariff-name">Вывод на первых позициях</p>
+                <span class="add-profile__tariff-price">99 руб./мес</span>
+              </div>
+              <div class="add-profile__tariff-number add-profile__tariff-number--two">2</div>
+            </li>
+            <li class="add-profile__tariff-item">
+              <div class="add-profile__tariff  add-profile__tariff--decor">
+                <p class="add-profile__tariff-name">Кастомный цвет карточки</p>
+                <span class="add-profile__tariff-price">59 руб./мес</span>
+              </div>
+              <div class="add-profile__tariff-number add-profile__tariff-number--three">3</div>
+            </li>
+          </ul>
+          <p class="add-profile__business-tariff">
+            <span class="add-profile__icon">
+              <svg class="add-profile__icon-business" width="17px" height="21px">
+                <use xlink:href="#business"></use>
+              </svg>
+            </span>
+            <button class="add-profile__business-tariff-text" type="button">Показать тарифы для бизнеса</button>
+          </p>
+        </div>
       </section>
 
-      <!--section class="signup">
+      <section class="signup">
+        <div class="signup__wrapper">
           <b class="signup__legend">Заинтересовались?</b>
-          <p class="signup__text">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="signup__link-signin" href="#">авторизуйтесь.</a> </p>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <input type="email" placeholder="E-mail">
-            <input type="submit" value="Войти">
+          <p class="signup__text">Зарегистрируйтесь, это&nbsp;быстро и бесплатно! Уже&nbsp;зарегистрированы? Тогда скорее <a class="signup__link-signin" href="#">авторизуйтесь.</a> </p>
+          <form action="https://echo.htmlacademy.ru" method="post" class="signup__form">
+            <input type="email" placeholder="E-mail" class="signup__email">
+            <input type="submit" value="Регистрация" class="signup__button">
           </form>
-      </section-->
+          <div class="signup__contacts contacts">
+            <div class="contacts__wrapper">
+              <p class="contacts__text">Остались вопросы? <br class="hidden-br">Мы с радостью на них ответим!</p>
+              <a class="contacts__phone" href="tel:88005558628">
+                <div class="contacts__icon-phone">
+                  <svg class="contacts__icon-phone-svg" width="18px" height="18px">
+                    <use xlink:href="#contacts-phone"></use>
+                  </svg>
+                </div>
+                8 800 555-86-28
+              </a>
+              <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
+                <div class="contacts__icon-mail">
+                  <svg class="contacts__icon-mail-svg" width="18px" height="13px">
+                    <use xlink:href="#contacts-mail"></use>
+                  </svg>
+                </div>
+                mail@htmlacademy.ru
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <!--section class="contacts">
-        <p class="contacts__text">Остались вопросы? <br>Мы с радостью на них ответим!</p>
-        <div class="contacts__wrapper">
-          <span class="contacts__phone">8 800 555-86-28</span>
-          <span class="contacts__email">mail@htmlacademy.ru</span>
+      <section class="address">
+        <div class="address__wrapper">
+          <div class="address__icon-location">
+            <svg class="address__icon-location-svg" width="14px" height="22px">
+              <use xlink:href="#contacts-location"></use>
+            </svg>
+          </div>
+          <p class="address__text">ул. Большая Конюшенная, 19/8</p>
+          <a href="#" class="address__link-route button">Проложить маршрут
+            <svg width="10px" height="14px" alt="HTML Academy">
+              <use xlink:href="#triangle-arrow-right"></use>
+            </svg>
+          </a>
         </div>
-        <div class="contacts__address">
-          <p class="contacts__address-text">ул. Большая Конюшенная, 19/8</p>
-          <a href="#" class="contacts__link-route button">Проложить маршрут</a>
+      </section>
+      <section class="map">
+          <div class="map__wrapper">
+          <span class="map__marker"></span>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="map__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg" width="320" height="546" alt="Карта">
+          </picture>
         </div>
-      </section-->
+      </section>
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-          <img class="page-header__logo-image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Погнали!">
-        </picture>
-      </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-              <a class="social__link social__link--facebook social__link--light-background" href="">
-                <svg class="social__icon-facebook" width="11px" height="21px" alt="Мы в Фейсбуке">
-                  <use xlink:href="#facebook"></use>
-                </svg>
-              </a>
-          </li>
-          <li class="social__item">
-              <a class="social__link social__link--vkontakte social__link--light-background" href="">
-                <svg class="social__icon-vkontakte" width="23px" height="12px" alt="Мы в Вконтакте">
-                  <use xlink:href="#vk"></use>
-                </svg>
-              </a>
-          </li>
-          <li class="social__item">
-              <a class="social__link social__link--instagram social__link--light-background" href="">
-                <svg class="social__icon-instagram" width="18px" height="18px" alt="Мы в Инстаграме">
-                  <use xlink:href="#instagram"></use>
-                </svg>
-              </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright">
-        <b class="page-footer__copyright-text">Разработано:</b>
-        <a class="button page-footer__copyright-link" href="https://htmlacademy.ru">
-          <svg width="27px" height="34px" alt="HTML Academy">
-            <use xlink:href="#htmlacademy"></use>
-          </svg>
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+            <img class="page-header__logo-image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Погнали!">
+          </picture>
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+                <a class="social__link social__link--facebook social__link--light-background" href="">
+                  <svg class="social__icon-facebook" width="11px" height="21px" alt="Мы в Фейсбуке">
+                    <use xlink:href="#facebook"></use>
+                  </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <a class="social__link social__link--vkontakte social__link--light-background" href="">
+                  <svg class="social__icon-vkontakte" width="23px" height="12px" alt="Мы в Вконтакте">
+                    <use xlink:href="#vk"></use>
+                  </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <a class="social__link social__link--instagram social__link--light-background" href="">
+                  <svg class="social__icon-instagram" width="18px" height="18px" alt="Мы в Инстаграме">
+                    <use xlink:href="#instagram"></use>
+                  </svg>
+                </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright">
+          <b class="page-footer__copyright-text">Разработано</b>
+          <a class="button page-footer__copyright-link" href="https://htmlacademy.ru">
+            <svg width="27px" height="34px" alt="HTML Academy">
+              <use xlink:href="#htmlacademy"></use>
+            </svg>
+        </div>
       </div>
     </footer>
 

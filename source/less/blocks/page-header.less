@@ -1,14 +1,31 @@
 .page-header {
   padding: 25px;
   padding-bottom: 8px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   background-color: @blue-back;
 
   &--style {
+    position: relative;
+    z-index: 5;
     border-radius: 0 0 20px 20px;
+    padding-top: 19px;
   }
+}
+
+.page-header--fixed {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  background: white;
+}
+
+.page-header__wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 270px;
+  margin: auto;
 }
 
 .page-header__logo {
@@ -18,7 +35,7 @@
 
 .page-header__title {
   position: relative;
-  margin: 56px 0 0;
+  margin: 0;
   flex-basis: 100%;
   font-weight: bold;
   font-size: 36px;
@@ -37,6 +54,10 @@
   border-radius: 2.4px;
 }
 
+.page-header__header {
+  margin-top: 56px;
+}
+
 .page-header__logo-image {
   vertical-align: top;
 }
@@ -49,36 +70,46 @@
   margin-left: auto;
 }
 
+
 @media (min-width: @tablet-width) {
   .page-header {
     padding: 40px;
     flex-direction: row;
-    // justify-content: space-between;
     align-items: center;
-    background: #161c35;
+    background: #182044;
 
     &--style {
-      border-radius: 0 0 45px 45px;
+      border-radius: 0 0 60px 60px;
       padding-bottom: 60px;
     }
 
     &__logo-image {
-      width: 166px;
-      height: 42px;
+      width: 164px;
+      height: auto;
     }
   }
 
   .page-header__wrapper {
     display: flex;
-    width: 100%;
+    width: 688px;
     padding: 0;
-    align-items: center;
   }
 
   .page-header__title {
-    margin-top: 130px;
     font-size: 60px;
     line-height: 70px;
+  }
+
+  .page-header__header {
+    margin-top: 140px;
+    padding: 0 35px;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-header__icon-return {
+    fill: #ffffff;
   }
 
   .page-header__title::after {
@@ -90,7 +121,9 @@
   }
 
   .page-header__return-home {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     min-width: 175px;
     font-weight: bold;
     font-size: 20px;
@@ -103,18 +136,32 @@
 @media (min-width: @desktop-width) {
   .page-header {
     padding: 50px 60px 0;
+    background-color: @blue-back;
+
+    &__logo {
+      margin-right: 0;
+    }
 
     &__logo-image {
       width: 200px;
       height: 52px;
     }
-
-    &__main-nav {
-      margin-left: 40px;
-    }
   }
 
   .page-header__title::after {
-    bottom: -68px;
+    bottom: -64px;
+  }
+
+  .page-header__header {
+    margin-top: 120px;
+    padding: 0 65px 60px;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-header__wrapper {
+    width: 1320px;
+    flex-direction: row;
   }
 }
