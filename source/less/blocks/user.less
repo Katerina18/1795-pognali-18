@@ -12,7 +12,8 @@
 }
 
 .user__wrapper {
-  padding: 0 20px 20px;
+  padding: 0 20px 17px;
+  text-align: center;
 }
 
 .user-card__foto {
@@ -60,18 +61,84 @@
 }
 
 .user__visit-contries {
-  margin-top: -15px;
-  margin-bottom: 10px;
+  margin-top: -12px;
+  margin-bottom: 15px;
+}
+
+.user__flag--sri-lanka {
+  width: 35px;
+  height: 24px;
+  background-image: url("../img/flag-sri-lanka.svg");
+  background-size: 35px 24px;
+  background-repeat: no-repeat;
+  // background-position: right 0 top 40px;
+}
+
+.user__flag--thailand {
+  width: 35px;
+  height: 24px;
+  background-image: url("../img/flag-thailand.svg");
+  background-size: 35px 24px;
+  background-repeat: no-repeat;
+}
+
+.user__flag--seychelles {
+  width: 35px;
+  height: 24px;
+  background-image: url("../img/flag-seychelles.svg");
+  background-size: 35px 24px;
+  background-repeat: no-repeat;
+}
+
+.user__flag--belgium {
+  width: 35px;
+  height: 24px;
+  background-image: url("../img/flag-belgium.svg");
+  background-size: 35px 24px;
+  background-repeat: no-repeat;
+}
+
+.user__flag--czech {
+  width: 35px;
+  height: 24px;
+  background-image: url("../img/flag-czech.svg");
+  background-size: 35px 24px;
+  background-repeat: no-repeat;
+}
+
+.user__flag {
+  margin-right: 19px;
+
+  &:last-child {
+    margin: 0;
+  }
 }
 
 .user__flags-list {
   list-style: none;
-  padding: 0 45px;
+  padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.user__status {
+  position: absolute;
+  display: inline-block;
+  top: 6px;
+  left: -15px;
+  width: 5px;
+  height: 5px;
+  background: #f97676;
+  border-radius: 50%;
+}
+
+.user__status--active {
+  background: #81e31e;
 }
 
 .user__name {
+  position: relative;
+  display: inline-block;
   margin: 0;
   margin-bottom: 15px;
   font-weight: bold;
@@ -101,6 +168,7 @@
 @media (min-width: @tablet-width) {
   .user {
     min-height: 480px;
+    border-radius: 20px;
   }
 
   .user__name {
@@ -121,6 +189,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .user {
+    min-height: 485px;
+  }
+
   .user__name {
     margin-bottom: 20px;
   }

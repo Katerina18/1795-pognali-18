@@ -9,7 +9,7 @@
   &__vehicle-title,
   &__level-title {
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     font-weight: normal;
     font-size: 15px;
     line-height: 18px;
@@ -35,7 +35,7 @@
 
 .user-card__likes {
   margin: 0;
-  padding: 0 0 24px 84px;
+  padding: 0 0 18px 84px;
   font-weight: bold;
   font-size: 14px;
   line-height: 21px;
@@ -44,7 +44,7 @@
 
 .user-card__hashtags {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   padding: 0 8px;
   font-weight: normal;
   font-size: 15px;
@@ -61,6 +61,53 @@
   display: flex;
   align-items: center;
   padding-bottom: 10px;
+}
+
+.user-card__icon-flag {
+  width: 26px;
+  height: 18px;
+  background-size: 26px 18px;
+  background-repeat: no-repeat;
+}
+
+.user-card__icon-flag--seychelles {
+  background-image: url("../img/flag-seychelles.svg");
+}
+
+.user-card__icon-flag--thailand {
+  background-image: url("../img/flag-thailand.svg");
+}
+
+.user-card__icon-flag--sri-lanka {
+  background-image: url("../img/flag-sri-lanka.svg");
+}
+
+.user-card__icon-flag--belgium {
+  background-image: url("../img/flag-belgium.svg");
+}
+
+.user-card__icon-flag--czech {
+  background-image: url("../img/flag-czech.svg");
+}
+
+.user-card__icon-flag--usa {
+  background-image: url("../img/flag-usa.svg");
+}
+
+.user-card__icon-flag--australia {
+  background-image: url("../img/flag-australia.svg");
+}
+
+.user-card__icon-flag--dominica {
+  background-image: url("../img/flag-dominica.svg");
+}
+
+.user-card__icon-flag--united-kingdom {
+  background-image: url("../img/flag-united-kingdom.svg");
+}
+
+.user-card__icon-flag--germany {
+  background-image: url("../img/flag-germany.svg");
 }
 
 .user-card__name-country {
@@ -88,6 +135,11 @@
 
 .user-card__vehicle-icon {
   padding: 0 10px;
+  fill: #d9d9d9;
+
+  &--active {
+    fill: #1d2e5b;
+  }
 }
 
 .user-card__level {

@@ -1,0 +1,132 @@
+.address {
+  position: relative;
+  z-index: 5;
+  margin-top: -60px;
+  display: flex;
+  flex-wrap: wrap;
+  background: @yellow;
+  .decor-section ();
+  padding: 90px 25px 35px;
+}
+
+.address__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 270px;
+  margin: auto;
+  padding: 0;
+}
+
+.address__text {
+  flex-basis: 200px;
+  margin: 0;
+  margin-bottom: 33px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: @darkblue;
+}
+
+.address__icon-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #121936;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.address__icon-location-svg {
+  fill: @yellow;
+}
+
+.address__link-route {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 270px;
+  padding: 20px 22px 18px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: #1d2e5b;
+  .btn_1 ();
+  border: 3px solid #192144;
+}
+
+@media (min-width: @tablet-width) {
+  .address {
+    padding-bottom: 65px;
+  }
+
+  .address__wrapper {
+    align-items: center;
+    padding: 20px 0;
+    width: 618px;
+  }
+
+  .address__link-route {
+    margin: 40px 0 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-basis: 618px;
+    height: 81px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .address__text {
+    flex-basis: auto;
+    margin: 0;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .address__icon-location {
+    margin-right: 25px;
+    width: 67px;
+    height: 67px;
+  }
+
+  .address__icon-location-svg {
+    width: 21px;
+    height: 31px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .address {
+    padding: 110px 25px 66px;
+  }
+
+  .address__wrapper {
+    width: 1320px;
+    align-items: center;
+    padding: 0;
+  }
+
+  .address__link-route {
+    margin: 0;
+    flex-basis: 324px;
+  }
+
+  .address__icon-location {
+    margin-left: 220px;
+    margin-right: 35px;
+    width: 90px;
+    height: 90px;
+  }
+
+  .address__text {
+    margin-right: 145px;
+  }
+
+  .address__icon-location-svg {
+    width: 28px;
+    height: 43px;
+  }
+}

@@ -1,7 +1,16 @@
 .signup {
-  background: @blue-back;
-  padding: 70px 25px 30px;
+  position: relative;
+  z-index: 6;
+  margin-top: -60px;
   text-align: center;
+  background: @darkblue;
+  padding: 135px 25px 0;
+  .decor-section ();
+
+  &__wrapper {
+    width: 270px;
+    margin: auto;
+  }
 }
 
 .signup__legend {
@@ -11,7 +20,32 @@
   color: #ff8d30;
 }
 
+.signup__button {
+  padding: 0;
+  flex-basis: 60px;
+  margin-left: -20px;
+  height: 62px;
+  background: @yellow;
+  border-radius: 10px;
+  border: 0;
+}
+
+.signup__form {
+  display: flex;
+  justify-content: center;
+}
+
+.signup__email {
+  padding: 0 40px 0 20px;
+  flex-basis: 230px;
+  height: 62px;
+  border: 0;
+  border-radius: 10px 0 0 10px;
+}
+
 .signup__text {
+  width: 200px;
+  margin: 20px auto 30px;
   color: white;
   font-weight: 200;
   font-size: 16px;
@@ -20,4 +54,74 @@
 
 .signup__link-signin {
   color: @yellow;
+}
+
+@media (min-width: @tablet-width) {
+  .signup {
+    padding: 135px 40px 0;
+  }
+
+  .signup__wrapper {
+    width: 688px;
+  }
+
+  .signup__legend {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .signup__text {
+    margin: 60px auto;
+    font-size: 28px;
+    line-height: 33px;
+    width: auto;
+  }
+
+  .signup__form {
+    display: flex;
+    width: 618px;
+    margin: auto;
+  }
+
+  .signup__email {
+    flex-basis: 536px;
+    padding: 0 35px;
+    height: 81px;
+    font-size: 24px;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .signup__button {
+    margin: 0;
+    flex-basis: 82px;
+    border-radius: 0 20px 20px 0;
+    height: 81px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .signup {
+    padding: 170px 60px 35px;
+
+    &__wrapper {
+      width: 1320px;
+    }
+  }
+
+  .signup__text {
+    margin-bottom: 55px;
+    width: 610px;
+  }
+
+  .signup__form {
+    width: 1174px;
+  }
+
+  .signup__email {
+    flex-basis: 850px;
+  }
+
+  .signup__button {
+    flex-basis: 324px;
+  }
 }

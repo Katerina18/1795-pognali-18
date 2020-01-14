@@ -1,0 +1,67 @@
+.map {
+  position: relative;
+  z-index: -1;
+  margin-top: -35px;
+}
+
+.map__wrapper {
+  position: relative;
+  width: 320px;
+  margin: auto;
+}
+
+.map__marker {
+  position: absolute;
+  top: 26%;
+  left: 44%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 41px;
+    height: 41px;
+    background: url("../../img/map-marker.svg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    margin-top: -85px;
+  }
+
+  .map__wrapper {
+    width: 768px;
+  }
+
+  .map__image {
+    width: 100%;
+  }
+
+  .map__marker {
+    position: absolute;
+    top: 38.5%;
+    left: 46.5%;
+
+    &::before {
+      width: 56px;
+      height: 56px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    margin-top: -205px;
+  }
+
+  .map__wrapper {
+    width: 1440px;
+  }
+
+  .map__marker {
+    top: 45%;
+    left: 48%;
+  }
+}

@@ -1,9 +1,10 @@
 .user-list {
   position: absolute;
-  top: 440px;
-  z-index: 6;
+  top: 433px;
+  z-index: 13;
   display: flex;
   padding: 0;
+  margin: 0;
   list-style: none;
 
   &__phone,
@@ -25,6 +26,10 @@
   }
 }
 
+.user-list--secondary {
+  display: none;
+}
+
 .user-list__login {
   display: block;
   padding: 10px 39px;
@@ -41,13 +46,17 @@
   .user-list {
     margin: 0;
     align-items: center;
-    top: 40px;
-    right: 40px;
+    top: 0;
+    right: 0;
 
     &__email,
     &__phone {
       display: none;
     }
+  }
+
+  .user-list--secondary {
+    display: flex;
   }
 
   .user-list__login {

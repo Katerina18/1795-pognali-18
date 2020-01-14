@@ -1,10 +1,15 @@
 .contacts {
-  padding: 50px 0 42px 50px;
   text-align: left;
+}
+
+.contacts__wrapper {
+  padding: 30px 0;
+  margin: auto;
 }
 
 .contacts__text {
   margin: 0;
+  padding-bottom: 15px;
   font-weight: 200;
   font-size: 16px;
   line-height: 22px;
@@ -14,9 +19,109 @@
 
 .contacts__phone,
 .contacts__email {
+  display: flex;
+  align-items: center;
   margin: 0;
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
-  color: @darkblue;
+  color: @yellow;
+  text-transform: uppercase;
+}
+
+.contacts__icon-mail,
+.contacts__icon-phone,
+.contacts__icon-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #121936;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.contacts__icon-phone-svg {
+  fill: @yellow;
+}
+
+.contacts__icon-location {
+  flex-basis: 45px;
+}
+
+.contacts__map {
+  position: relative;
+  z-index: -1;
+  margin-top: -35px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__wrapper {
+    padding: 60px 0;
+    width: 618px;
+  }
+
+  .contacts__text {
+    padding-bottom: 40px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .contacts__email,
+  .contacts__phone {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .contacts__icon-mail,
+  .contacts__icon-phone {
+    margin-right: 25px;
+    width: 67px;
+    height: 67px;
+  }
+
+  .contacts__icon-phone-svg {
+    width: 27px;
+    height: 27px;
+  }
+
+  .contacts__icon-mail-svg {
+    width: 27px;
+    height: 19px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 70px 0;
+    width: 1180px;
+  }
+
+  .contacts__text {
+    flex-basis: 100%;
+  }
+
+  .contacts__icon-mail,
+  .contacts__icon-phone {
+    width: 90px;
+    height: 90px;
+  }
+
+  .contacts__phone {
+    margin-right: 120px;
+  }
+
+  .contacts__icon-phone-svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .contacts__icon-mail-svg {
+    width: 36px;
+    height: 26px;
+  }
 }

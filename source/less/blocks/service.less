@@ -1,9 +1,26 @@
 .service {
   position: relative;
-  z-index: 4;
+  z-index: 10;
   .decor-section ();
-  padding: 30px 60px 80px 50px;
+  padding: 30px 50px 80px;
   background-color: @darkblue;
+}
+
+.service__wrapper {
+  position: relative;
+  width: 220px;
+  margin: auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: #141b3b;
+    z-index: -1;
+    top: -40px;
+    left: -50px;
+    width: 113px;
+    height: 132px;
+  }
 
   &::after {
     content: "";
@@ -11,8 +28,8 @@
     width: 292px;
     height: 352px;
     z-index: -1;
-    bottom: 0;
-    right: 0;
+    bottom: -80px;
+    right: -40px;
     background-image: url("../img/about-mobile@1x.png");
     background-repeat: no-repeat;
     background-size: 292px 352px;
@@ -20,17 +37,6 @@
     @media (min-resolution: @retina-dppx) {
       background-image: url("../img/about-mobile@2x.png");
     }
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    background: #141b3b;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 113px;
-    height: 132px;
   }
 }
 
@@ -82,6 +88,22 @@
   .service {
     padding: 100px 75px 85px;
     background-color: @darkblue;
+  }
+
+  .service__wrapper {
+    width: 618px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: #141b3b;
+      z-index: -1;
+      top: -40px;
+      left: -35px;
+      width: 688px;
+      height: 213px;
+      border-radius: 20px;
+    }
 
     &::after {
       content: "";
@@ -89,8 +111,8 @@
       width: 376px;
       height: 548px;
       z-index: -1;
-      bottom: 90px;
-      right: 7px;
+      bottom: 0;
+      right: -70px;
       background-image: url("../img/about-tablet@1x.png");
       background-repeat: no-repeat;
       background-size: 376px 548px;
@@ -98,18 +120,6 @@
       @media (min-resolution: @retina-dppx) {
         background-image: url("../img/about-tablet@2x.png");
       }
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      background: #141b3b;
-      z-index: -1;
-      top: 55px;
-      left: 40px;
-      width: 688px;
-      height: 213px;
-      border-radius: 20px;
     }
   }
 
@@ -149,28 +159,38 @@
 
 @media (min-width: @desktop-width) {
   .service {
-    position: relative;
-    z-index: 4;
     margin-top: -60px;
     padding: 190px 60px 160px;
-    background: url("../img/about-desktop@1x.png");
-    background-size: 630px auto;
-    background-color: #192144;
-    background-repeat: no-repeat;
-    background-position: bottom right 5%;
-
-    @media (min-resolution: @retina-dppx) {
-      background-image: url("../img/about-desktop@2x.png");
-    }
 
     &::after {
       display: none;
     }
+  }
+
+  .service__wrapper {
+    width: 1320px;
 
     &::before {
-      top: 160px;
-      left: 60px;
+      top: -60px;
+      left: 0;
       width: 213px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 630px;
+      height: 665px;
+      z-index: -1;
+      bottom: -160px;
+      right: 0;
+      background-image: url("../img/about-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-size: 630px 665px;
+
+      @media (min-resolution: @retina-dppx) {
+        background-image: url("../img/about-desktop@2x.png");
+      }
     }
   }
 
